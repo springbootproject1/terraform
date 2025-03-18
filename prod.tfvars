@@ -1,0 +1,10 @@
+environment         = "prod"
+instance_type       = "t3.large"  # (May be used if you have generic instance_type variables)
+vpc_cidr            = "10.0.0.0/16"
+public_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs= ["10.0.101.0/24", "10.0.102.0/24"]
+ami                 = "ami-0abcdef1234567890"   # Replace with a valid prod AMI ID
+key_name            = "my-key-prod"
+jenkins_instance_type = "t2.micro"
+build_instance_type   = "t2.micro"
+sonar_instance_type   = "t2.medium"
